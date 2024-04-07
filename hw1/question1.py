@@ -13,5 +13,4 @@ image_gray = image_gray.astype(np.uint8)
 # 2.cv库自动转化为灰度图
 image_gray_cv2 = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
-cv2.imshow("pic", image_gray)
-cv2.waitKey(0)
+cv2.imwrite("assert/I1.jpg", image_gray_cv2)
